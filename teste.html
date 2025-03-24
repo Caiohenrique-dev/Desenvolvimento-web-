@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* Barra de navegação */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+
+        #divnav1 {
+            display: flex;
+            align-items: center;
+        }
+
+        #divnav1 .logo {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        #divnav1 p {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilizando a área de pesquisa */
+        .pesquisa {
+            display: flex;
+            align-items: center;
+        }
+
+        .pesquisa input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-right: 10px;
+            width: 250px;
+        }
+
+        .pesquisa button {
+            padding: 6px 15px;
+            background-color: #9BCBE1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .pesquisa button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Seção de Boas-vindas */
+        .welcome-section {
+            background-color: #F73E9C;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Seção de produtos */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 50%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card h3 {
+            padding: 15px;
+            font-size: 1.3em;
+            color: #333;
+        }
+
+        .product-card .price {
+            font-size: 1.2em;
+            color: black;
+            margin: 15px 0;
+        }
+
+        .product-card .button {
+            background-color: #D96277;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .product-card .button:hover {
+            background-color: #BFA099;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            display: block;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <div id="divnav1"> <img class="logo" src="logo.png"></img.>
+            <p><strong>Paty Maletas </strong> </p>
+        </div>
+        <div class="pesquisa"> <input type="text"> <button> Pesquisar </button> </div>
+    </nav>
+
+    <!-- Seção de Boas-vindas -->
+    <div class="welcome-section">
+        <p>Bem-vindo à Paty Maletas! Aproveite nossas promoções especiais!</p>
+    </div>
+
+    <!-- Seção de Produtos -->
+    <div class="products">
+        <div class="product-card">
+            <img src="teste.png" alt="Produto 1">
+            <h3>Camiseta Adidas Essentials 3 Listras Preta e Branca</h3>
+            <p class="price">R$ 99,99</p>
+            <a href="#" class="button">Comprar</a>
+        </div>
+        <div class="product-card">
+            <img src="https://media.karousell.com/media/photos/products/2023/10/16/nike_original_tshirt_1697482072_dd838406_progressive.jpg"
+                alt="Produto 2">
+            <h3> Camiseta do italo </h3>
+            <p class="price">R$ 79,99</p>
+            <a href="#" class="button">Comprar</a>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p class="price">R$ 89,99</p>
+            <a href="#" class="button">Comprar</a>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Produto 4">
+            <h3>Produto 4</h3>
+            <p class="price">R$ 120,00</p>
+            <a href="#" class="button">Comprar</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Caio Henrique Pereira Da Silva matrícula, 202421861.</p>
+    </footer>
+
+</body>
+
+</html>
